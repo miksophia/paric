@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="bread">
+    <div class="container">
+      <div class="bread-crumbs">
+        <ul>
+          <li class="pag-link">
+            <a href="">Главная</a>
+          </li>
+          <li>
+            <p>Частным мастерам</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="private">
+    <div class="container">
+      <h2>
+        Частным мастерам
+      </h2>
+      <h3>
+        Для салонов красоты, парикмахерских и частных мастеров мы предоставляем особые условия сотрудничества.
+      </h3>
+      <p class="text">
+        Наш магазин сотрудничает с мастерами и предлагает специальные цены на всю продукцию.
+      </p>
+      <p class="sub-header">
+        Как получить доступ:
+      </p>
+      <p class="text">
+        <span>1 способ:</span> Зарегистрируйтесь на сайте как мастер, прикрепите в соответствующее окно копию документа,
+        который подтверждает ваше профессиональное обучение. Обращаем ваше внимание, сразу после регистрации вы будете
+        видеть розничные цены магазина! Специальные цены будут доступны в течение 2ух рабочих дней с момента
+        регистрации, после проверки ваших документов.
+      </p>
+      <p class="text">
+        <span>2 способ:</span> Оставьте заявку на сотрудничество в форме ниже
+      </p>
+      <p class="text">
+        <span>
+          Мы свяжемся с вами в течение 2 дней!
+        </span>
+      </p>
+      <div class="application">
+        <p class="application__header">
+          Заявка на сотрудничество
+        </p>
+        <form>
+          <div class="application__top">
+            <div class="order__inp">
+              <label>ФИО*</label>
+              <input type="text" required>
+            </div>
+            <div class="order__inp">
+              <label>Email*</label>
+              <input type="email" required>
+            </div>
+            <div class="order__inp">
+              <label>Телефон*</label>
+              <input type="tel" required>
+            </div>
+            <div class="order__inp">
+              <label>Документ, подтверждающий профессиональное обучение</label>
+              <input type="text" required>
+            </div>
+          </div>
+          <div class="order__checkbox">
+            <ul class="filter__checkbox">
+              <li>
+                <input type="checkbox" id="1" class="visually-hidden" required>
+                <label for="1">Я согласен на обработку моих персональных данных для оформления заказа </label>
+              </li>
+              <li>
+                <input type="checkbox" id="2" class="visually-hidden">
+                <label for="2">Подписаться на рассылку выгодных предложений </label>
+              </li>
+            </ul>
+          </div>
+          <button class="btn">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  @include('components/subscribe.html')
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>

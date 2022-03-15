@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="reg">
+    <div class="container">
+      <h2>Регистрация</h2>
+      <div class="order__wrapper">
+        <div class="order__form">
+          <form>
+            <ol class="order__list">
+              <li class="order__item">
+                <p class="order__header">
+                  Основные данные
+                </p>
+                <div class="order__cont">
+                  <div class="order__inp">
+                    <label>ФИО</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>Email</label>
+                    <input type="email">
+                  </div>
+                  <div class="order__inp">
+                    <label>Телефон</label>
+                    <input type="tel">
+                  </div>
+                </div>
+
+              </li>
+              <li class="order__item">
+                <p class="order__header">
+                  Тип пользователя
+                </p>
+                <div class="order__cont reg__type">
+                  <div class="order__radio retail">
+                    <input type="radio" id="r1" class="visually-hidden" value="r1" name="r">
+                    <label for="r1">
+                      <img src="assets/img/svg/img.svg">
+                      <div>
+                        <p>Розничный покупатель</p>
+                        <div>
+                          <span>
+                            Подойдет для  простых покупателей и мастеров салона
+                          </span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="order__radio legal">
+                    <input type="radio" id="r2" class="visually-hidden" value="r2" name="r">
+                    <label for="r2">
+                      <img src="assets/img/svg/img.svg">
+                      <div>
+                        <p>Юридическое лицо</p>
+                        <div>
+                         <span>
+                           Подойдет для регистрации салонов красоты, оптовых покупателей
+                         </span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="reg__retail">
+                  <p class="retail__header">
+                    Я являюсь мастером салона красоты. Что мне делать?
+                  </p>
+                  <p class="retail__text">
+                    Для получения статуса мастера салона при регистрации, требующего регистрацию в Единой системе
+                    идентификации и аутентификации (далее — ЕСИА), необходимо
+                    прикрепить документ, подтверждающий статус мастера салона. 
+                  </p>
+                  <div class="input__wrapper__file">
+                    <input name="file" type="file" name="file" id="input__file" class="input input__file">
+                    <label for="input__file" class="input__file-button">
+                      <span class="input__file-button-text">Прикрепить документ</span>
+                    </label>
+                  </div>
+                </div>
+              </li>
+              <li class="order__item legal__item">
+                <p class="order__header">
+                  Сведения об организации
+                </p>
+                <div class="order__cont">
+                  <div class="order__inp">
+                    <label>Название организации</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>Юридический адрес</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>Фактический адрес</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>ИНН</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>КПП</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>ОГРН</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>Телефон</label>
+                    <input type="tel">
+                  </div>
+                  <div class="order__inp">
+                    <label>Название банка</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>Город и адрес банка</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>БИК</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>Корр. счёт</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>Расчётный счёт</label>
+                    <input type="text">
+                  </div>
+                </div>
+
+              </li>
+              <li class="order__item">
+                <p class="order__header">
+                  Пароль
+                </p>
+                <div class="order__cont">
+                  <div class="order__inp">
+                    <label>Пароль</label>
+                    <input type="password">
+                  </div>
+                  <div class="order__inp">
+                    <label>Подтверждение пароля</label>
+                    <input type="password">
+                  </div>
+                  <div class="order__checkbox">
+                    <ul class="filter__checkbox">
+                      <li>
+                        <input type="checkbox" id="1" class="visually-hidden" required>
+                        <label for="1">Я согласен на обработку моих персональных данных для оформления заказа </label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="2" class="visually-hidden">
+                        <label for="2">Подписаться на рассылку выгодных предложений </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+            </ol>
+            <button class="btn">
+              Завершить регистрацию
+            </button>
+          </form>
+        </div>
+        <div class="order__cart">
+          <p class="retail__right">
+            Регистрация. Зачем?
+          </p>
+          <p class="retail__text__right">
+            Всплывающие подсказки показываются после вызова "Помощь на странице" или при первом входе пользователя на
+            страницу, и помогают ему сориентироваться в новом функционале.
+          </p>
+          <p class="retail__text__right">
+            Подробное описание приведено в спецификации.
+          </p>
+          <p class="retail__text__right">
+            Конфигурация всплывающей подсказки
+            Всплывающие подсказки предназначены для описания возможностей продукта, с которым работает пользователь.
+
+          </p>
+          <p class="retail__text__right">
+            Для конфигурации всплывающей подсказки необходимо использовать контрол Hint/Popup:InfoboxContainer. Это
+            обертка для области, рядом с которой необходимо показать подсказку.
+
+          </p>
+          <p class="retail__text__right">
+            Контрол конфигурируется с помощью опций:
+          </p>
+          <p class="retail__text__right">
+            groupKey — идентификатор группы подсказок. Для каждого функционального участка необходимо конфигурировать
+            свою группу подсказок под общим идентификатором;
+            hintTemplate — шаблон подсказки;
+            alignment — выравнивание всплывающей подсказки относительно контента;
+            offset — отступы всплывающей подсказки относительно контента;
+            targetSide — сторона контентной области, относительно которой будет позиционироваться всплывающая подсказка.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  @include('components/subscribe.html')
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>

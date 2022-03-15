@@ -1,0 +1,29 @@
+.er__wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  div{
+    display: flex;
+    margin-top: 20px;
+    column-gap: 20px;
+  }
+  a{
+    display: inline-block;
+  }
+}
+.er-h{
+  font-family: $Ops-Bold;
+  color: #945790;
+  font-size: 90px;
+  margin-bottom: 20px;
+  line-height: 100px;
+}
+.er-sub-h{
+  font-family: $Ops-Bold;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 35px;
+}

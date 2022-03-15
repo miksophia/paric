@@ -1,0 +1,78 @@
+
+
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+
+
+.input__file-button-text{
+  border: 1px solid #945790;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+padding: 8px 20px;
+  color: #945790;
+
+}
+.retail__header{
+  color: #945790;
+  font-family: $Ops-Bold;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.retail__text{
+  font-size: 14px;
+  line-height: 16px;
+margin-bottom: 25px;
+  color: #333333;
+}
+.retail__right{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.retail__text__right{
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+.reg__retail{
+  display: none;
+}
+.reg__retail--active{
+  display: block;
+}
+.legal__item{
+  display: none;
+}
+.legal__item--active{
+  display: block;
+}
+@media (max-width: 1023px){
+  .reg .order__cart{
+    display: none;
+  }
+}
+@media (max-width: 767px){
+  .retail__header{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .retail__text{
+    font-size: 10px;
+    line-height: 14px;
+  }
+}

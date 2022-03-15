@@ -1,0 +1,1412 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="main-slider">
+    <div class="container">
+      <div class="main-slider__wrapper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="assets/img/png/slide-mob-1.png">
+                  <source media="(min-width: 768x)" srcset="assets/img/png/slide-1.png">
+                  <img src="assets/img/png/slide-1.png">
+                </picture>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="assets/img/png/slide-mob-2.png">
+                  <source media="(min-width: 768x)" srcset="assets/img/png/slide-2.png">
+                  <img src="assets/img/png/slide-2.png">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination main-swiper-pag">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="offer">
+    <div class="container">
+      <div class="swiper offer__wrapper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="">
+            <img src="assets/img/png/offer-1.png">
+          </a></div>
+          <div class="swiper-slide"><a href="">
+            <img src="assets/img/png/offer-2.png">
+          </a></div>
+          <div class="swiper-slide"><a href="">
+            <img src="assets/img/png/offer-3.png">
+          </a></div>
+        </div>
+        <div class="swiper-pagination offer-pag"></div>
+      </div>
+    </div>
+  </section>
+  <section class="main-catalog">
+    <div class="container">
+      <div class="main-catalog__wrapper">
+        <a href="">
+          <img src="assets/img/png/cat-1.png">
+        </a>
+        <a href="">
+          <img src="assets/img/png/cat-2.png">
+        </a>
+        <a href="">
+          <img src="assets/img/png/cat-3.png">
+        </a>
+        <a href="">
+          <img src="assets/img/png/cat-4.png">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="new-items">
+    <div class="container">
+      <div class="new-items__wrapper">
+        <p class="main__header">
+          Новинки
+        </p>
+        <div class="swiper__buttns">
+          <div class="swiper-button-next new-items-next"></div>
+          <div class="swiper-button-prev new-items-prev"></div>
+        </div>
+        <div class="swiper new-items__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__new">
+                          Новинка
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__new">
+                          Новинка
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__new">
+                          Новинка
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__new">
+                          Новинка
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__new">
+                          Новинка
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__new">
+                          Новинка
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__new">
+                          Новинка
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__new">
+                          Новинка
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="banner">
+    <div class="container">
+      <div class="banner__wrapper">
+        <a href="">
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/img/png/banner-mob-1.png">
+            <source media="(min-width: 768px)" srcset="assets/img/png/banner.png">
+            <img src="assets/img/png/banner.png">
+          </picture>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <section class="main-rec">
+    <div class="container">
+      <div class="main-rec__wrapper">
+        <p class="main__header">
+          Рекомендуемые
+        </p>
+        <div class="swiper__buttns">
+          <div class="swiper-button-next main-rec-next"></div>
+          <div class="swiper-button-prev main-rec-prev"></div>
+        </div>
+        <div class="swiper rec-items__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__sale">
+                          Акция
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-us">
+    <div class="container">
+      <div class="about-us__wrapper">
+        <img src="assets/img/png/about.png">
+        <p class="about-us__header">
+          Гильдия парикмахеров By Oltu U — это сообщество профессионалов,
+          любящих свое дело и представляющих интернет-магазин товаров для красоты.
+        </p>
+        <div class="about-us__inf">
+
+          <p class="about-us__text">Они всегда подскажут, что необходимо для объемной укладки,
+            как восстановить поврежденные волосы или приобрести стойкое окрашивание.
+            Все необходимое для этого вы можете найти в Oltu U: щипцы-гофре или стойкую краску для волос,
+            увлажняющие маски или несмываемые спреи, сухие шампуни или валики для волос. </p>
+          <p class="about-us__text">
+            На наших полках вы не увидите неизвестные бренды, зато найдете те,
+            что заслужили доверие: WAHL, ANDIS, DEWAL, MOSER, BabyLiss, MARK SHMIDT,
+            Panasonic, JRL, Oster, ESTEL, PRORASO и многие другие. На все электротовары действует гарантия,
+            а у косметики есть сертификаты качества, поэтому вы можете быть уверены в том, что покупаете.
+          </p>
+          <a href="" class="btn">
+            Поробнее
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main-brands">
+    <div class="container">
+      <div class="main-brands__wrapper">
+        <p class="main__header">
+          Наш магазин является официальным дилером таких брендов, как:
+        </p>
+        <div class="swiper__buttns">
+          <div class="swiper-button-next brands-next"></div>
+          <div class="swiper-button-prev brands-prev"></div>
+        </div>
+        <div class="swiper brands__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/png/l1.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/png/l2.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/png/l3.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/png/l4.png">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/png/l5.png">
+            </div>
+          </div>
+
+        </div>
+        <a href="" class="main-brands__link">
+          Поробнее о гарантиях качества
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="main-hit">
+    <div class="container">
+      <div class="main-hit__wrapper">
+        <p class="main__header">
+          Хит продаж
+        </p>
+        <div class="swiper__buttns">
+          <div class="swiper-button-next main-hit-next"></div>
+          <div class="swiper-button-prev main-hit-prev"></div>
+        </div>
+        <div class="swiper hit-items__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__hit">
+                          Хит продаж
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__hit">
+                          Хит продаж
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__hit">
+                          Хит продаж
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__hit">
+                          Хит продаж
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__hit">
+                          Хит продаж
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__hit">
+                          Хит продаж
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__hit">
+                          Хит продаж
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog__item">
+                <form>
+                  <div class="catalog__item__wrapper">
+                    <a href="">
+                      <div class="catalog__item__img">
+                        <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                        <p class="item__top item__hit">
+                          Хит продаж
+                        </p>
+                      </div>
+                      <div class="catalog__item__inf">
+                        <p class="catalog__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="item__rating">
+                          <span>4,5</span>
+                          <img src="assets/img/svg/star.svg">
+                        </div>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="item__btns">
+                      <button class="btn">
+                        В корзину
+                      </button>
+                      <button>
+                        <img src="assets/img/svg/heart.svg">
+                      </button>
+
+                    </div>
+                    <button class="item__present">
+                      <img src="assets/img/svg/present.svg">
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="banner">
+    <div class="container">
+      <div class="banner__wrapper">
+        <a href="">
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/img/png/banner-mob-2.png">
+            <source media="(min-width: 768px)" srcset="assets/img/png/banner-2.png">
+            <img src="assets/img/png/banner-2.png">
+          </picture>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <div class="container">
+      <div class="blog__wrapper">
+        <div class="blog__header">
+          <p class="main__header">
+            Блог
+          </p>
+          <a href="" class="btn">
+            Все записи
+          </a>
+        </div>
+        <div class="blog__list">
+          <div class="blog__item">
+            <a href="">
+              <img src="assets/img/svg/plug-2.svg">
+              <div class="blog__item__inf">
+                <p>Инновация, прорыв, мечта каждой девушки!</p>
+                <p class="blog__item__text">
+                  Все это о нашей новинке – Пудра-кушон Yu.r Moist Layer Cushion.
+                  Пудра-кушон это принципиально новая разработка корейских специалистов.
+                </p>
+                <p class="blog__date">
+                  09/04/2019
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="">
+              <img src="assets/img/svg/plug-2.svg">
+              <div class="blog__item__inf">
+                <p>Инновация, прорыв, мечта каждой девушки!</p>
+                <p class="blog__item__text">
+                  Все это о нашей новинке – Пудра-кушон Yu.r Moist Layer Cushion.
+                  Пудра-кушон это принципиально новая разработка корейских специалистов.
+                </p>
+                <p class="blog__date">
+                  09/04/2019
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="">
+              <img src="assets/img/svg/plug-2.svg">
+              <div class="blog__item__inf">
+                <p>Инновация, прорыв, мечта каждой девушки!</p>
+                <p class="blog__item__text">
+                  Все это о нашей новинке – Пудра-кушон Yu.r Moist Layer Cushion.
+                  Пудра-кушон это принципиально новая разработка корейских специалистов.
+                </p>
+                <p class="blog__date">
+                  09/04/2019
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="inst">
+    <div class="container">
+      <div class="inst__wrapper">
+        <div class="blog__header">
+          <p class="main__header">
+            Мы в Instagram
+          </p>
+          <a href="" class="btn">
+            Все записи
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="">
+              <img src="assets/img/png/inst-1.png">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="assets/img/png/inst-2.png">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="assets/img/png/inst-3.png">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="assets/img/png/inst-4.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  @include('components/subscribe.html')
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>

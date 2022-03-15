@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="bread">
+    <div class="container">
+      <div class="bread-crumbs">
+        <ul>
+          <li class="pag-link">
+            <a href="">Главная</a>
+          </li>
+          <li>
+            <p>Распродажа</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="sellout">
+    <div class="container">
+      <h2>
+        Распродажа!
+      </h2>
+      <h3>
+        В нашем интернет-магазине предусмотрены следующие скидки:
+      </h3>
+      <ul>
+        <li>
+          <p><span class="yellow">3%</span> - при заказе от 5000 руб.</p>
+        </li>
+        <li>
+          <p><span class="green">5%</span> - при заказе от 7000 руб.</p>
+        </li>
+        <li>
+          <p><span class="red">10%</span> - при заказе от 10000 руб.</p>
+        </li>
+      </ul>
+      <p>
+        <span>Бесплатная доставка (в пределах МКАД)</span> - при заказе на сумму от 5000 руб.
+      </p>
+    </div>
+  </section>
+  @include('components/subscribe.html')
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>

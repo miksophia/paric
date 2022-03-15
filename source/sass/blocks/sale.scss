@@ -1,0 +1,119 @@
+.sale__link{
+  display: inline-block;
+  padding: 8px 50px;
+  margin-bottom: 20px;
+}
+.sale__wpapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 38px;
+  padding-bottom: 30px;
+  article{
+    border: 1px solid #D4D4D4;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  p{
+    color: $Dark-gray;
+  }
+}
+.sale__info{
+  padding: 10px 34px;
+}
+.sale__date, .sale__text{
+  font-size: 14px;
+  line-height: 19px;
+}
+.sale__date{
+  margin-bottom: 7px;
+}
+.sale__text{
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+.subscribe{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.subscribe__wrapper{
+  background-image: url("../img/png/subsc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  form{
+    text-align: center;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .btn{
+    margin-left: 21px;
+  }
+}
+.subscribe__header{
+  font-size: 30px;
+  line-height: 41px;
+  color: $White;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+.sub-btn-1{
+  background: #C776AF;
+}
+.subscribe__mob{
+  display: none;
+}
+@media (max-width: 767px){
+  .sale__wpapper{
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+  }
+  .sale__info{
+    padding: 15px 10px;
+  }
+  .subscribe{
+    .container{
+      padding: 0;
+    }
+  }
+  .subscribe__mob{
+    display: block;
+  }
+  .subscribe__wrapper{
+    background: #FFFFFF;
+  }
+  .subscribe__header{
+    font-size: 20px;
+    line-height: 23px;
+    color: $Dark-gray;
+  }
+  .subscribe__wrapper form{
+    flex-direction: column;
+    padding: 0 25px;
+    row-gap: 20px;
+  }
+  .subscribe__wrapper .btn{
+    margin-left: 0;
+  }
+  .sub-btn-1{
+    margin-right: 10px;
+  }
+}
+@media (max-width: 499px){
+  .sub-btn-1{
+  margin-right: 0;
+    margin-bottom: 10px;
+}
+  .subscribe__mob img{
+    min-height: 150px;
+    object-fit: cover;
+  }
+  .subscribe__wrapper .btn{
+    width: 100%;
+  }
+}

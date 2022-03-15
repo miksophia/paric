@@ -1,0 +1,26 @@
+.del__top{
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+.list{
+  list-style-type: disc;
+  padding-left: 20px;
+  li{
+    margin-bottom: 20px;
+  }
+  span{
+    font-family: $Ops-Bold;
+  }
+}
+@media (max-width: 767px){
+  .del__top{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .list{
+    li{
+      margin-bottom: 10px;
+    }
+  }
+}

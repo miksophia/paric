@@ -1,0 +1,21 @@
+.guarantee__wrapper{
+  background-image: url(../img/png/garanty.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-bottom: 20px;
+}
+.gr__header{
+  font-size: 20px;
+  line-height: 27px;
+font-family: $Ops-Bold;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px){
+  .gr__header{
+    font-size: 18px;
+    line-height: 21px;
+    font-family: $Ops-Bold;
+    margin-bottom: 10px;
+  }
+}

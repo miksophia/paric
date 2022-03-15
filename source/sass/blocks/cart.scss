@@ -1,0 +1,163 @@
+.cart__descr-1 {
+  grid-area: descr-1;
+}
+
+.cart__descr-2 {
+  grid-area: descr-2;
+}
+
+.cart__descr-3 {
+  grid-area: descr-3;
+}
+
+.cart__descr-4 {
+  grid-area: descr-4;
+}
+
+.cart__descr-5 {
+  grid-area: descr-5;
+}
+
+.cart__descr {
+  display: grid;
+  grid-template-columns: 1.1fr 2fr 1fr 2fr 1fr 0.5fr;
+  grid-column-gap: 30px;
+  margin-bottom: 10px;
+  grid-template-areas: ". descr-1 descr-2 descr-3 descr-4 descr-5";
+}
+
+.cart__item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 0.5fr;
+  grid-column-gap: 30px;
+  padding: 15px;
+  align-items: center;
+  border: 1px solid #D4D4D4;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+
+  .quantity {
+    margin-bottom: 0;
+  }
+}
+
+.cart__cross {
+  justify-self: center;
+}
+
+.cart__art {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 7px;
+  color: #9E9E9E;
+}
+
+.cart__list {
+  margin-bottom: 40px;
+}
+
+.cart__bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 100px;
+
+  p {
+    margin-right: 50px;
+  }
+}
+
+.cart__mob {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .cart__descr {
+    display: none;
+  }
+  .cart__wrapp {
+    margin-top: 20px;
+  }
+  .cart__item {
+    grid-column-gap: 10px;
+    padding: 10px;
+  }
+  .cart__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .cart__bottom {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cart__item {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    position: relative;
+
+    .quantity {
+      input, span {
+        padding: 4px 8px;
+      }
+
+      input {
+        width: 50px;
+      }
+    }
+
+    .price {
+      justify-self: center;
+    }
+  }
+  .cart__cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+  }
+  .price-max {
+    display: none;
+  }
+  .cart__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cart__art {
+    font-size: 12px;
+  }
+  .cart__list {
+    margin-bottom: 20px;
+  }
+  .cart__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .cart__bottom p {
+    margin-bottom: 20px;
+  }
+  .cart__mob {
+    display: flex;
+
+    a {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 8px 15px;
+      font-family: $Ops-Bold;
+      border: 1px solid #945790;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  .cart__bottom a, .cart__mob a {
+    width: 100%;
+    text-align: center;
+  }
+}

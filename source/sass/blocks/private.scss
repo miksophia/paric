@@ -1,0 +1,28 @@
+.private h3{
+  margin-bottom: 20px;
+}
+.private .application{
+  margin-top: 50px;
+}
+.private .sub-header:after{
+  width: 40px;
+  height: 40px;
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -45px;
+  background-image: url(../img/svg/arrow-p.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.private .sub-header{
+  position: relative;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+@media (max-width: 1023px){
+.private .order__inp label{
+  font-size: 11px;
+  line-height: 15px;
+}
+}

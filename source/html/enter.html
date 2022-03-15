@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="enter">
+    <div class="container">
+      <h2>
+        Войдите в личный кабинет
+      </h2>
+      <div class="enter__wrapper">
+        <form>
+          <div class="order__inp">
+            <label>Телефон/Email</label>
+            <input type="text" required>
+          </div>
+          <div class="order__inp">
+            <label>Пароль</label>
+            <input type="password" required>
+          </div>
+          <button class="btn">
+            Войти в кабинет
+          </button>
+        </form>
+      </div>
+      <div class="enter__btns">
+        <p class="forgot" data-modal2>
+
+          Забыли пароль?
+        </p>
+        <a href="">
+          Регистрация
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  @include('components/subscribe.html')
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>

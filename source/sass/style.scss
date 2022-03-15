@@ -1,0 +1,38 @@
+//----- Библиотеки -----//
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "../../node_modules/normalize.css/normalize.css";
+
+//----- Глобальные стили -----//
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+
+//----- Основные стили -----//
+@import "blocks/main-header.scss";
+@import "blocks/header.scss";
+@import "blocks/sale.scss";
+@import "blocks/footer.scss";
+@import "blocks/catalog.scss";
+@import "blocks/main.scss";
+@import "blocks/item.scss";
+@import "blocks/cart.scss";
+@import "blocks/sale-item.scss";
+@import "blocks/blog.scss";
+@import "blocks/order.scss";
+@import "blocks/history.scss";
+@import "blocks/company.scss";
+@import "blocks/brands.scss";
+@import "blocks/registration.scss";
+@import "blocks/delivery.scss";
+@import "blocks/payment.scss";
+@import "blocks/guarantee.scss";
+@import "blocks/wholesalers.scss";
+@import "blocks/installment.scss";
+@import "blocks/sellout.scss";
+@import "blocks/private.scss";
+@import "blocks/article.scss";
+@import "blocks/rules.scss";
+@import "blocks/enter.scss";
+@import "blocks/modal.scss";
+@import "blocks/404.scss";

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="bread">
+    <div class="container">
+      <div class="bread-crumbs">
+        <ul>
+          <li class="pag-link">
+            <a href="">Главная</a>
+          </li>
+          <li>
+            <p>Оптовикам</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="w-sales">
+    <div class="container">
+      <h2>
+        Приглашаем к сотрудничеству салоны красоты, барбершопы, учебные центры и студии.
+      </h2>
+      <h3>
+        Гильдия Парикмахеров - это
+      </h3>
+      <div class="w-sales__descr">
+        <div>
+          <img src="assets/img/png/g-1.png">
+          <p>
+            широкий ассортимент товаров
+          </p>
+        </div>
+        <div>
+          <img src="assets/img/png/g-2.png">
+          <p>
+            выгодные цены
+          </p>
+        </div>
+        <div>
+          <img src="assets/img/png/g-3.png">
+          <p>
+            индивидуальный подход к каждому клиенту
+          </p>
+        </div>
+        <div>
+          <img src="assets/img/png/g-4.png">
+          <p>
+            оперативная доставка
+          </p>
+        </div>
+      </div>
+      <div class="w-sales__text">
+        <p class="gr__header">
+          ОПТОВЫМ ПОКУПАТЕЛЯМ
+        </p>
+        <p>
+          Если вы хотите сотрудничать с нами, заполните форму обратной связи либо направьте свой запрос на электронную
+          почту <a href="mailto:HELLO@OLTUU.RU">HELLO@OLTUU.RU</a>
+        </p>
+        <p>Юридическим лицам мы предоставляем полный пакет документов (счет, товарная накладная).
+        </p>
+      </div>
+      <div class="w-sales__text">
+        <p class="gr__header">
+          ПОСТАВЩИКАМ
+        </p>
+        <p>
+          Если вы являетесь поставщиком товара,
+          присылайте свое предложение на электронную
+          почту <a href="mailto:ZAKUPKI@OLTUU.RU">ZAKUPKI@OLTUU.RU</a>
+          Будем рады обсудить с вами варианты сотрудничества.
+        </p>
+      </div>
+      <div class="application">
+        <p class="application__header">
+          Заявка на сотрудничество
+        </p>
+        <form>
+          <div class="application__top">
+            <div class="order__inp">
+              <label>ФИО*</label>
+              <input type="text" required>
+            </div>
+            <div class="order__inp">
+              <label>Email*</label>
+              <input type="email" required>
+            </div>
+            <div class="order__inp">
+              <label>Телефон*</label>
+              <input type="tel" required>
+            </div>
+            <div class="order__inp">
+              <label>Город</label>
+              <input type="text" required>
+            </div>
+            <div class="order__inp">
+              <label>Объем закупки*</label>
+              <input type="text" required>
+            </div>
+            <div class="order__inp">
+              <label>Название компании</label>
+              <input type="text" required>
+            </div>
+            <div class="order__inp">
+              <label>Интересующие бренды</label>
+              <input type="text" required>
+            </div>
+          </div>
+          <p class="application__note">*Обязательные пункты для заполнения</p>
+          <div class="order__checkbox">
+            <ul class="filter__checkbox">
+              <li>
+                <input type="checkbox" id="1" class="visually-hidden" required>
+                <label for="1">Я согласен на обработку моих персональных данных для оформления заказа </label>
+              </li>
+              <li>
+                <input type="checkbox" id="2" class="visually-hidden">
+                <label for="2">Подписаться на рассылку выгодных предложений </label>
+              </li>
+            </ul>
+          </div>
+          <button class="btn">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  @include('components/subscribe.html')
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog__wrapper">
+        <div class="sidebar">
+          <div class="sidebar__filter">
+            <form>
+              <ul class="sidebar__filter__list">
+                <li class="sidebar__filter__item">
+                  <div class="filter__header">
+                    <p>Цена</p>
+                    <img src="assets/img/svg/arrow-btm.svg">
+                  </div>
+                  <div class="filter__content">
+                    <div class="filter__inp">
+                      <input type="number">
+                      <input type="number">
+                    </div>
+                  </div>
+                </li>
+                <li class="sidebar__filter__item">
+                  <div class="filter__header">
+                    <p>Бренд</p>
+                    <img src="assets/img/svg/arrow-btm.svg">
+                  </div>
+                  <div class="filter__content">
+                    <ul class="filter__checkbox">
+                      <li>
+                        <input type="checkbox" id="1" class="visually-hidden">
+                        <label for="1">Dewal 4</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="2" class="visually-hidden">
+                        <label for="2">Dewal 4</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="3" class="visually-hidden">
+                        <label for="3">Dewal 4</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="4" class="visually-hidden">
+                        <label for="4">Dewal 4</label>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="sidebar__sale">
+            <p class="sidebar__sale__header">
+              Акции
+            </p>
+            <ul class="sidebar__sale__list">
+              <li class="sidebar__sale__item">
+                <form>
+                  <a href="">
+                    <div class="sale__item__wrapp">
+                      <img src="assets/img/svg/plug.svg">
+                      <div class="sale__item__inf">
+                        <p class="sale__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </form>
+              </li>
+              <li class="sidebar__sale__item">
+                <form>
+                  <a href="">
+                    <div class="sale__item__wrapp">
+                      <img src="assets/img/svg/plug.svg">
+                      <div class="sale__item__inf">
+                        <p class="sale__item__header">
+                          Br-507 Кисть Dewal для румян, размер 16 см
+                        </p>
+                        <div class="price">
+                          <p class="price__new">9 980 ₽</p>
+                          <p class="price__old">10 000 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__question">
+            <p class="question__header">Есть вопросы?</p>
+            <p class="question__text">Задайте вопрос нашему менеджеру</p>
+            <button class="btn" data-modal>Задать вопрос</button>
+          </div>
+        </div>
+        <div class="catalog__top">
+          <div class="bread-crumbs">
+            <ul>
+              <li class="pag-link">
+                <a href="">Главная</a>
+              </li>
+              <li>
+                <p>Волосы</p>
+              </li>
+            </ul>
+          </div>
+          <h2>Волосы</h2>
+          <div class="catalog__sort">
+            <div class="catalog__sort-1">
+              <label>Сортировка</label>
+              <select>
+                <option>
+                  По умолчанию
+                </option>
+                <option>
+                  По возрастанию
+                </option>
+              </select>
+            </div>
+            <div class="catalog__sort-2">
+              <p>
+                Отображение товаров
+              </p>
+              <div class="sort__btns">
+                <button class="sort__btn-1">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" fill="white" stroke="#D4D4D4"/>
+                    <path d="M7 10H29V14H7V10Z" fill="#C4C4C4"/>
+                    <path d="M7 16H29V20H7V16Z" fill="#C4C4C4"/>
+                    <path d="M7 22H29V26H7V22Z" fill="#C4C4C4"/>
+                  </svg>
+                </button>
+                <button class="sort__btn-2">
+                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" fill="white" stroke="#D4D4D4"/>
+                    <path d="M7 10H13V14H7V10Z" fill="#945790"/>
+                    <path d="M7 16H13V20H7V16Z" fill="#945790"/>
+                    <path d="M7 22H13V26H7V22Z" fill="#945790"/>
+                    <path d="M15 10H21V14H15V10Z" fill="#945790"/>
+                    <path d="M15 16H21V20H15V16Z" fill="#945790"/>
+                    <path d="M15 22H21V26H15V22Z" fill="#945790"/>
+                    <path d="M23 10H29V14H23V10Z" fill="#945790"/>
+                    <path d="M23 16H29V20H23V16Z" fill="#945790"/>
+                    <path d="M23 22H29V26H23V22Z" fill="#945790"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="catalog__sort-mob">
+              <p>
+                Фильтр
+              </p>
+              <button>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="29" height="29" rx="5.5" fill="white" stroke="#D4D4D4"/>
+                  <g clip-path="url(#clip0_513_4535)">
+                    <path
+                      d="M22.4452 7.50366H7.56242C7.54414 7.50366 7.54414 7.50366 7.52586 7.50366C7.50757 7.50366 7.48929 7.54023 7.50757 7.59508L13.3583 15.5484V22.4961L16.6493 21.2894V15.5484L22.5 7.59508C22.5 7.59508 22.5 7.5768 22.5 7.55851C22.4817 7.52195 22.4634 7.50366 22.4452 7.50366Z"
+                      fill="#323232"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_513_4535">
+                      <rect width="15" height="15" fill="white" transform="translate(7.5 7.5)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+
+              </button>
+            </div>
+            <div class="catalog__sort-3">
+              <label>Показывать по</label>
+              <select>
+                <option>
+                  9
+                </option>
+                <option>
+                  18
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__bottom">
+
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <form>
+                <div class="catalog__item__wrapper">
+                  <a href="">
+                    <div class="catalog__item__img">
+                      <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                      <p class="item__top item__sale">
+                        Акция
+                      </p>
+                    </div>
+                    <div class="catalog__item__inf">
+                      <p class="catalog__item__header">
+                        Br-507 Кисть Dewal для румян, размер 16 см
+                      </p>
+                      <div class="item__rating">
+                        <span>4,5</span>
+                        <img src="assets/img/svg/star.svg">
+                      </div>
+                      <div class="price">
+                        <p class="price__new">9 980 ₽</p>
+                        <p class="price__old">10 000 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="item__btns">
+                    <button class="btn">
+                      В корзину
+                    </button>
+                    <button>
+                      <img src="assets/img/svg/heart.svg">
+                    </button>
+
+                  </div>
+                  <button class="item__present">
+                    <img src="assets/img/svg/present.svg">
+                  </button>
+                </div>
+              </form>
+            </li>
+            <li class="catalog__item">
+              <form>
+                <div class="catalog__item__wrapper">
+                  <a href="">
+                    <div class="catalog__item__img">
+                      <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                      <p class="item__top item__discount">
+                        Распродажа
+                      </p>
+                    </div>
+                    <div class="catalog__item__inf">
+                      <p class="catalog__item__header">
+                        Br-507 Кисть Dewal для румян, размер 16 см
+                      </p>
+                      <div class="item__rating">
+                        <span>4,5</span>
+                        <img src="assets/img/svg/star.svg">
+                      </div>
+                      <div class="price">
+                        <p class="price__new">9 980 ₽</p>
+                        <p class="price__old">10 000 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="item__btns">
+                    <button class="btn">
+                      В корзину
+                    </button>
+                    <button>
+                      <img src="assets/img/svg/heart.svg">
+                    </button>
+
+                  </div>
+                  <button class="item__present">
+                    <img src="assets/img/svg/present.svg">
+                  </button>
+                </div>
+              </form>
+            </li>
+            <li class="catalog__item">
+              <form>
+                <div class="catalog__item__wrapper">
+                  <a href="">
+                    <div class="catalog__item__img">
+                      <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                    </div>
+                    <div class="catalog__item__inf">
+                      <p class="catalog__item__header">
+                        Br-507 Кисть Dewal для румян, размер 16 см
+                      </p>
+                      <div class="item__rating">
+                        <span>4,5</span>
+                        <img src="assets/img/svg/star.svg">
+                      </div>
+                      <div class="price">
+                        <p class="price__new">Нет в наличии</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="item__btns">
+                    <button class="btn not-av">
+                      Узнать о поступлении
+                    </button>
+                    <button>
+                      <img src="assets/img/svg/heart.svg">
+                    </button>
+
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li class="catalog__item">
+              <form>
+                <div class="catalog__item__wrapper">
+                  <a href="">
+                    <div class="catalog__item__img">
+                      <div class="item__option">
+                        <img src="assets/img/svg/option.svg">
+                        <p>25 расцветок</p>
+                      </div>
+                      <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                    </div>
+                    <div class="catalog__item__inf">
+                      <p class="catalog__item__header">
+                        Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                      </p>
+                      <div class="item__rating">
+                        <span>4,5</span>
+                        <img src="assets/img/svg/star.svg">
+                      </div>
+                      <div class="price">
+                        <p class="price__new">9 980 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="item__btns">
+                    <button class="btn">
+                      В корзину
+                    </button>
+                    <button>
+                      <img src="assets/img/svg/heart.svg">
+                    </button>
+
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li class="catalog__item">
+              <form>
+                <div class="catalog__item__wrapper">
+                  <a href="">
+                    <div class="catalog__item__img">
+                      <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                    </div>
+                    <div class="catalog__item__inf">
+                      <p class="catalog__item__header">
+                        Br-507 Кисть Dewal для румян, размер 16 см
+                      </p>
+                      <div class="item__rating">
+                        <span>4,5</span>
+                        <img src="assets/img/svg/star.svg">
+                      </div>
+                      <div class="price">
+                        <p class="price__new">9 980 ₽</p>
+                        <p class="price__old">10 000 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="item__btns">
+                    <button class="btn">
+                      В корзину
+                    </button>
+                    <button>
+                      <img src="assets/img/svg/heart.svg">
+                    </button>
+
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li class="catalog__item">
+              <form>
+                <div class="catalog__item__wrapper">
+                  <a href="">
+                    <div class="catalog__item__img">
+                      <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                    </div>
+                    <div class="catalog__item__inf">
+                      <p class="catalog__item__header">
+                        Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                      </p>
+                      <div class="item__rating">
+                        <span>4,5</span>
+                        <img src="assets/img/svg/star.svg">
+                      </div>
+                      <div class="price">
+                        <p class="price__new">9 980 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="item__btns">
+                    <button class="btn">
+                      В корзину
+                    </button>
+                    <button>
+                      <img src="assets/img/svg/heart.svg">
+                    </button>
+
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li class="catalog__item">
+              <form>
+                <div class="catalog__item__wrapper">
+                  <a href="">
+                    <div class="catalog__item__img">
+                      <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                    </div>
+                    <div class="catalog__item__inf">
+                      <p class="catalog__item__header">
+                        Br-507 Кисть Dewal для румян, размер 16 см
+                      </p>
+                      <div class="item__rating">
+                        <span>4,5</span>
+                        <img src="assets/img/svg/star.svg">
+                      </div>
+                      <div class="price">
+                        <p class="price__new">9 980 ₽</p>
+                        <p class="price__old">10 000 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="item__btns">
+                    <button class="btn">
+                      В корзину
+                    </button>
+                    <button>
+                      <img src="assets/img/svg/heart.svg">
+                    </button>
+
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li class="catalog__item">
+              <form>
+                <div class="catalog__item__wrapper">
+                  <a href="">
+                    <div class="catalog__item__img">
+                      <img src="assets/img/svg/plug.svg" class="catalog__item__img__main">
+                    </div>
+                    <div class="catalog__item__inf">
+                      <p class="catalog__item__header">
+                        Br-507 Кисть Dewal для румян, размер 16 см размер 16 см
+                      </p>
+                      <div class="item__rating">
+                        <span>4,5</span>
+                        <img src="assets/img/svg/star.svg">
+                      </div>
+                      <div class="price">
+                        <p class="price__new">9 980 ₽</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="item__btns">
+                    <button class="btn">
+                      В корзину
+                    </button>
+                    <button>
+                      <img src="assets/img/svg/heart.svg">
+                    </button>
+
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+          @include('components/pagination.html')
+        </div>
+      </div>
+    </div>
+  </section>
+  @include('components/subscribe.html')
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>

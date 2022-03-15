@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="order">
+    <div class="container">
+      <h2>
+        Оформление заказа
+      </h2>
+      <div class="order__wrapper">
+        <div class="order__form">
+          <form>
+            <ol class="order__list">
+              <li class="order__item">
+                <p class="order__header">
+                  Данные пользователя
+                </p>
+                <div class="order__cont">
+                  <div class="order__inp">
+                    <label>ФИО</label>
+                    <input type="text">
+                  </div>
+                  <div class="order__inp">
+                    <label>Email</label>
+                    <input type="email">
+                  </div>
+                  <div class="order__inp">
+                    <label>Телефон</label>
+                    <input type="tel">
+                  </div>
+                  <div class="order__checkbox">
+                    <ul class="filter__checkbox">
+                      <li>
+                        <input type="checkbox" id="1" class="visually-hidden" required>
+                        <label for="1">Я согласен на обработку моих персональных данных для оформления заказа </label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="2" class="visually-hidden">
+                        <label for="2">Подписаться на рассылку выгодных предложений </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="promo-cod">
+                    <label>
+                      У меня есть промокод
+                    </label>
+                    <div>
+                      <input type="text">
+                      <button class="btn">
+                        Применить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="order__item">
+                <p class="order__header">
+                  Способы оплаты
+                </p>
+                <div class="order__cont payment">
+                  <div class="order__radio">
+                    <input type="radio" id="r1" class="visually-hidden" value="r1" name="r">
+                    <label for="r1">
+                      <img src="assets/img/svg/img.svg">
+                      <div>
+                        <p>Оплата при получении</p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="order__radio">
+                    <input type="radio" id="r2" class="visually-hidden" value="r2" name="r">
+                    <label for="r2">
+                      <img src="assets/img/svg/img.svg">
+                      <div>
+                        <p>Оплата сейчас по карте</p>
+                        <div>
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M16 2L2 16M3.5 6C4.88071 6 6 4.88071 6 3.5C6 2.11929 4.88071 1 3.5 1C2.11929 1 1 2.11929 1 3.5C1 4.88071 2.11929 6 3.5 6ZM14.5 17C15.8807 17 17 15.8807 17 14.5C17 13.1193 15.8807 12 14.5 12C13.1193 12 12 13.1193 12 14.5C12 15.8807 13.1193 17 14.5 17Z"
+                              stroke="#61CEC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <p>Скидка 3% при онлайн-оплате</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="order__radio">
+                    <input type="radio" id="r3" class="visually-hidden" value="r3" name="r">
+                    <label for="r3">
+                      <img src="assets/img/svg/img.svg">
+                      <div>
+                        <p>Яндекс.Деньги
+                        </p>
+                        <div>
+                          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M16 2L2 16M3.5 6C4.88071 6 6 4.88071 6 3.5C6 2.11929 4.88071 1 3.5 1C2.11929 1 1 2.11929 1 3.5C1 4.88071 2.11929 6 3.5 6ZM14.5 17C15.8807 17 17 15.8807 17 14.5C17 13.1193 15.8807 12 14.5 12C13.1193 12 12 13.1193 12 14.5C12 15.8807 13.1193 17 14.5 17Z"
+                              stroke="#61CEC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <p>Скидка 3% при онлайн-оплате</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="order__radio">
+                    <input type="radio" id="r4" class="visually-hidden" value="r4" name="r">
+                    <label for="r4">
+                      <img src="assets/img/svg/img.svg">
+                      <div>
+                        <p>Оплата по счету юр.лица</p>
+                        <div>
+                          <span>Мы вышлем Вам счет для оплаты </span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="order__radio ras">
+                    <input type="radio" id="r5" class="visually-hidden" value="r5" name="r">
+                    <label for="r5">
+                      <img src="assets/img/svg/img.svg">
+                      <div>
+                        <p>Купить в рассрочку</p>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </li>
+              <li class="order__item ras-cont">
+                <p class="order__header">
+                  Выберите тип рассрочки
+                </p>
+                <div class="order__cont installments">
+                  <div class="order__radio">
+                    <input type="radio" id="p1" class="visually-hidden" value="p1" name="p">
+                    <label for="p1">
+                      <img src="assets/img/svg/img.svg">
+                      <div>
+                        <p>Рассрочка на срок от 3 до 10 мес.</p>
+                        <div>
+                          <p>от 799 р./мес</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="order__radio">
+                    <input type="radio" id="p2" class="visually-hidden" value="p2" name="p">
+                    <label for="p2">
+                      <img src="assets/img/svg/img.svg">
+                      <div>
+                        <p>Рассрочка на срок от 12 мес.
+                        </p>
+                        <div>
+                          <p>от 999 р./мес</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </li>
+              <li class="order__item">
+                <p class="order__header">
+                  Доставка
+                </p>
+                <div class="order__delivery">
+                  <div class="delivery__place">
+                    <label>
+                      Доставка в
+                    </label>
+                    <input type="text" placeholder="Москва">
+                    <select>
+                      <option>Россия</option>
+                      <option>Беларусь</option>
+                    </select>
+                  </div>
+                  <div class="delivery__radio">
+                    <div class="delivery__radio__item">
+                      <input type="radio" id="t1" class="visually-hidden" value="t1" name="t">
+                      <label for="t1">
+                        <img src="assets/img/svg/img.svg">
+                        <div>
+                          <p>До пункта выдачи</p>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="delivery__radio__item">
+                      <input type="radio" id="t2" class="visually-hidden" value="t2" name="t">
+                      <label for="t2">
+                        <img src="assets/img/svg/img.svg">
+                        <div>
+                          <p>Курьером до двери</p>
+                          <span>(1-12 дней)</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="delivery__radio__item">
+                      <input type="radio" id="t3" class="visually-hidden" value="t3" name="t">
+                      <label for="t3">
+                        <img src="assets/img/svg/img.svg">
+                        <div>
+                          <p>До почтового отделания</p>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ol>
+            <div class="order__comment">
+              <label>Комментарий к заказу</label>
+              <textarea>
+              </textarea>
+            </div>
+            <div class="order__total">
+              <p class="order__total__header">
+                Итого с учетом доставки
+              </p>
+              <div class="total__list">
+                <p>
+                  Товаров на сумму:
+                </p>
+                <p>
+                  4567 ₽
+                </p>
+                <p>
+                  Доставка:
+                </p>
+                <p>
+                  Бесплатно
+                </p>
+                <p>
+                  Скидка за предоплату:
+                </p>
+                <p>
+                  5 %
+                </p>
+                <p>
+                  Скидка по промокоду:
+                </p>
+                <p>
+                  10 %
+                </p>
+                <p>
+                  Итого:
+                </p>
+                <p><strong>
+                  4000 ₽
+                </strong></p>
+              </div>
+            </div>
+            <button class="btn">
+              Завершить оформление заказа
+            </button>
+          </form>
+        </div>
+        <div class="order__cart">
+          <p class="order__cart__header">
+            Ваш заказ
+          </p>
+          <div class="cart__list">
+            <div class="cart__item">
+              <img src="assets/img/svg/plug.svg">
+              <div class="cart__inf">
+                <a href="">
+                  <p class="cart__art">
+                    арт. 435678
+                  </p>
+                  <p class="cart__text">
+                    Br-507 Кисть Dewal для румян, размер 16 см
+                  </p>
+                </a>
+
+              </div>
+              <div class="price">
+                <p class="price__new">9 980 ₽</p>
+              </div>
+              <div class="cart__quantity">
+                <form>
+                  <div class="quantity">
+                    <span class="input-btn minus">-</span>
+                    <input type="number" value="1" class="count" name="count" id="product_price">
+
+                    <span class="input-btn plus">+</span>
+                  </div>
+                </form>
+              </div>
+              <div class="price price-max">
+                <p class="price__new">9 980 ₽</p>
+              </div>
+              <div class="cart__cross">
+                <form>
+                  <button>
+                    <img src="assets/img/svg/cross.svg">
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="cart__item">
+              <img src="assets/img/svg/plug.svg">
+              <div class="cart__inf">
+                <a href="">
+                  <p class="cart__art">
+                    арт. 435678
+                  </p>
+                  <p class="cart__text">
+                    Br-507 Кисть Dewal для румян, размер 16 см
+                  </p>
+                </a>
+
+              </div>
+              <div class="price">
+                <p class="price__new">9 980 ₽</p>
+              </div>
+              <div class="cart__quantity">
+                <form>
+                  <div class="quantity">
+                    <span class="input-btn minus">-</span>
+                    <input type="number" value="1" class="count" name="count" id="product_price1">
+
+                    <span class="input-btn plus">+</span>
+                  </div>
+                </form>
+              </div>
+              <div class="price price-max">
+                <p class="price__new">9 980 ₽</p>
+              </div>
+              <div class="cart__cross">
+                <form>
+                  <button>
+                    <img src="assets/img/svg/cross.svg">
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="cart__present">
+              <img src="assets/img/svg/plug.svg">
+              <a href="">
+                Товар в подарок
+              </a>
+              <img src="assets/img/svg/present.svg" class="img__present">
+            </div>
+          </div>
+          <div class="order__cart__total">
+            <p>
+              Товаров на сумму:
+            </p>
+            <p>
+              4567 ₽
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  @include('components/subscribe.html')
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>

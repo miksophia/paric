@@ -1,0 +1,39 @@
+.brands__links{
+  background: rgba(160, 222, 221, 0.8);
+  border: 1px solid #C4C4C4;
+  padding: 38px 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.letter__list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.letter__header{
+  font-size: 38px;
+  line-height: 52px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.brand__letter{
+  margin-bottom: 20px;
+}
+.brands__wrapper{
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+.brands__links{
+  display: none;
+}
+  .letter__header{
+    font-size: 25px;
+    line-height: 34px;
+    background: #A0DEDD;
+    padding: 0 10px;
+  }
+  .letter__list{
+    grid-template-columns: 1fr 1fr;
+  }
+}

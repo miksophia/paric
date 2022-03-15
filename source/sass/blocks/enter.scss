@@ -1,0 +1,37 @@
+.enter__btns{
+  display: flex;
+  column-gap: 30px;
+  a, p{
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+
+    color: #808080;
+  }
+}
+.enter__wrapper{
+  margin-bottom: 30px;
+  .order__inp{
+    width: 50%;
+  }
+  .btn{
+    padding: 8px 50px;
+  }
+}
+.enter{
+  cursor: pointer;
+}
+@media (max-width: 767px){
+  .enter__wrapper .order__inp{
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 450px){
+  .enter__wrapper .btn{
+    width: 100%;
+  }
+  .enter__btns{
+    justify-content: center;
+  }
+}
